@@ -6,3 +6,23 @@ body {
 .container {
   margin-top: 50px;
 }
+
+.highlight {
+  font-weight: bold;
+  color: #2c3e50;
+}
+.italic {
+  font-style: italic;
+}
+
+#dueles {
+  width: 80%;
+  height: 400px;
+  overflow: auto;
+  margin: 0 auto;
+  margin-bottom: 50px
+}
+
+#indications {
+  width: 10%;
+}
