@@ -27,7 +27,7 @@
             font-style: italic;
         }
 
-        #dueles {
+        .dueles{
             width: 80%;
             height: 400px;
             overflow: auto;
@@ -38,11 +38,59 @@
         #indications {
             width: 10%;
         }
+
+        #notas {
+            margin-bottom: 50px;
+        }
+
+        #frase{
+            height: 100px;
+        }
+        
+        #frase p{
+            background:#ffffff69;
+            padding: 3px;
+            border-radius: 5px;
+        }
+
+        input[type="date"] {
+            padding: 10px;
+            background: #ffffff5e;
+            border: 2px solid #ffffff70; /* Color del borde */
+            border-radius: 5px; /* Bordes redondeados */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+            transition: border-color 0.3s ease; /* Transición suave */
+            font-size: 16px; /* Tamaño de fuente */
+        }
+        
+        input[type="date"]:focus {
+            border-color: #ffffffa6; /* Color del borde al enfocar */
+            outline: none; /* Quitar el contorno por defecto */
+        }
+        
+        button {
+            padding: 10px 20px; /* Espaciado interno */
+            background-color: #ffffff45; /* Color de fondo */
+            color: white; /* Color del texto */
+            border: none; /* Sin borde */
+            border-radius: 5px; /* Bordes redondeados */
+            cursor: pointer; /* Cambiar cursor al pasar el mouse */
+            font-size: 16px; /* Tamaño de fuente */
+            margin-left: 10px; /* Espacio entre el input y el botón */
+            transition: background-color 0.3s ease; /* Transición suave */
+        }
+        
+        button:hover {
+            background-color: #ffffff54; /* Color de fondo al pasar el mouse */
+        }
+        
     </style>
 </head>
 <body>
     <div class="container">
-        <div id="dueles">
+        <h1>¿Si me leeras?</h1>
+        <div class="dueles">
+            <p class="italic">Estaré actualizando esta pagina, nose, sabes por hobbie, es que nose si me lees, agregaré cosas con el paso del tiempo, cada vez que pueda...</p>
             <h2>Mensaje Personal de un Mario Marino</h2>
             <p>Ok, K. O. Luchar hasta el final, no habrá marcha atrás.</p>
             <p>
@@ -156,6 +204,10 @@
             
             
             </p>
+        </div>
+        <div id=notas>
+            <h2>Fraces que me inventotototooo</h2>
+            <div id=frase class=dueles></div>
         </div>
         <h1>Calculador de días que te pienso ufass</h1>
         <p>Ingresa la fecha de hoy y luego presiona Ufas...</p>
