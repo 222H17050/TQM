@@ -5,6 +5,7 @@ const fonts = [
     "Bebas Neue"
 ];
 
+
 // Función para establecer una fuente aleatoria
 function setRandomFont() {
     const randomFont = fonts[Math.floor(Math.random() * fonts.length)];
@@ -30,10 +31,53 @@ function setRandomBackground() {
     document.body.style.backgroundColor = randomColor;
 }
 
+const frases = [
+    "Perdí en el romanticismo cuando me fijé en ti.",
+    "Quisiera regresar en el tiempo y quedarme en el primer día que nos fuimos juntos...",
+    "El amor verdadero existe, solo que no le entienden a la puta vibra.",
+    "Dejaré la chaqueta cuando ya no te ame.",
+    "Aun queda alguien por quien luchar y ese eres tú...",
+    "Si voy a llorar por ella, entonces que también sea por mí...",
+    "No pienses que tu vida es una mierda, el mundo sí, pero tú no...",
+    "Definitivamente, quizás sin dolor no hay gloria.",
+    "Corre más fuerte que hoy y hoy más fuerte que nunca.",
+    "Lo importante no es cómo el mundo te ve sino cómo ves tú al mundo.",
+    "Nunca me rendiré.",
+    "Tengo que hacer lo que más me gusta."
+];
+
+
+function setFrases(frases) {
+    // Asignar el arreglo de frases a la variable dotaciones
+    const dotaciones = frases;
+
+    // Obtener el contenedor donde se agregarán los elementos
+    const contenedor = document.getElementById('frase');
+
+    // Limpiar el contenedor antes de agregar nuevos elementos
+    contenedor.innerHTML = '';
+
+    // Usar un ciclo for para iterar a través del arreglo
+    for (let i = 0; i < dotaciones.length; i++) {
+        // Acceder al elemento actual del arreglo
+        let actual = dotaciones[i];
+
+        // Crear un nuevo elemento <p>
+        const parrafo = document.createElement("p");
+        
+        // Asignar el texto del elemento al string actual del arreglo
+        parrafo.textContent = actual;
+
+        // Agregar el nuevo párrafo al contenedor
+        contenedor.appendChild(parrafo);
+    }
+}
+
 // Llamar a la función al cargar la página
 // Llamar a las funciones al cargar la página
 setRandomBackground();
 setRandomFont();
+setFrases(frases);
 
 
 
